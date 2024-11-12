@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body {
+       background: rgba(252, 12, 4, 0.938);
+       color: rgb(5, 97, 235);
+       font: normal 18pt Calibri;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Vamos aprender hoje a usar o <strong>DOM</strong></p>
+    <p>Aqui se mostra o parágrafos </p>
+    <div class ="msg">Clique aqui</div>
+    <script>
+     var corpo = window.document.body
+     corpo.style.background = 'black'
+     var n = window.document.getElementsByTagName('p')[0]
+    document.write(n.innerHTML)
+     /*
+     var id = window.document.getElementById('msg')
+     id.style.background='yellow'
+     id.innerText='Aguardando.....'*/
+     
+     /*
+     var name= window.document.getElementsByName('msg')[0]
+     name.innerText='Aguardando......'
+     */
+
+     var lol = window.document.querySelector('div.msg')
+     lol.style.background='green'
+    </script>
+</body>
+</html>

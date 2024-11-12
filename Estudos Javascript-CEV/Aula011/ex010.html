@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ONU</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+</head>
+<body>
+    <h1>Controle de nacionalidade</h1>
+    Sua nacionalidade:
+    <input type="text" name="txt" id="txt"> 
+    <input type="button"value='verificar' onclick="verificar()">
+    <div id="resposta"> 
+      Sua resposta:
+    </div>
+    <script>
+       
+        function verificar() {
+            var txtv = window.document.querySelector('input#txt')
+            var resposta = window.document.querySelector('div#resposta')
+            var país = (txt.value)
+            resposta.innerHTML=`Sua País de origem é ${país}. `
+            if (país=='Brasil'){
+                 resposta.innerHTML += 'Brasileiro'
+            }else{
+                resposta.innerHTML+='Estrangeiro'
+            }
+        }
+        </script>
+</body>
+</html>

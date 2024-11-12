@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <title>Adição</title>
+    <style>
+    body{
+    font: normal 18px Arial;
+    height: 100px;
+
+    }
+
+    #res{
+        font: 18px 'Calibri' ;
+    }
+    </style>
+</head>
+<body>
+    <h1>Somando</h1>
+    <input type="number" name="yx1" id="yx1">+
+    <input type="number" name="yx2" id="yx2">
+    <input type="button" value="soma" onclick="soma()">
+    <div id="res" >Resultado da soma </div>
+    
+    <script>
+     function soma(){
+        var yx1=window.document.getElementById('yx1')
+        var yx2=window.document.querySelector('input#yx2')
+        var res=window.document.getElementById('res')
+        var n1= Number(yx1.value)
+        var n2= Number(yx2.value)
+        var resultado = n1 + n2
+        res.innerHTML = `A soma de ${n1} e ${n2} é igual a <strong>${resultado}</strong>`
+     }
+
+
+    </script>
+</body>
+</html>
