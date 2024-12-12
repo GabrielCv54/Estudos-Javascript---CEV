@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parâmetros de função</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='../Funções/Parametros.js'></script>
+</head>
+<body>
+    <h1>Parâmetros de função</h1>
+    <h2>Parâmetros padrão</h2>
+    <p>Se uma função for chamada com argumentos ausentes (menos que os declarados), os valores ausentes serão definidos como undefined.
+        Às vezes isso é aceitável, mas às vezes é melhor atribuir um valor padrão ao parâmetro:</p>
+    <p>function myFunction(x, y) {<br>
+        if (y === undefined) {<br>
+          y = 2;<br>
+        } <br>
+      } <br>
+      </p>
+    <h2>Valores de Parâmetros padrão</h2>
+    <p>O ES6 permite que os parâmetros de função tenham valores padrão.
+    </p>
+    <p>function myFunction(x, y = 10) { <br>
+        return x + y; <br>
+      } <br>
+      myFunction(5); <br></p>
+    <h2>Função Rest Parâmetro</h2>
+    <p>O parâmetro rest (...) permite que uma função trate um número indefinido de argumentos como uma matriz:</p>
+
+
+</body>
+</html>

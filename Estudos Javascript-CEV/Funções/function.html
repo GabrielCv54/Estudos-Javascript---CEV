@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Funções</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='function.js'></script>
+</head>
+<body style="font-family: monospace;">
+    <h1>Funções</h1>
+    <p>As funções executam tarefas específicas e possuem uma chamada(quando seu nome é colocado logo abaixo)</p>
+    <h1>Construtor Function()</h1>
+    <p>Como você viu nos exemplos anteriores, as funções JavaScript são definidas com a functionpalavra-chave .
+
+        Funções também podem ser definidas com um construtor de função JavaScript integrado chamado Function().</p>
+
+    <h1>Função de elevação</h1>
+     <p>Anteriormente neste tutorial, você aprendeu sobre "hoisting" ( JavaScript Hoisting ).
+
+        Hoisting é o comportamento padrão do JavaScript de mover declarações para o topo do escopo atual.
+        
+        O içamento se aplica a declarações de variáveis​​ e de funções.
+        
+        Por isso, funções JavaScript podem ser chamadas antes de serem declaradas:</p>
+        <p>myFunction(5);<br>
+
+            function myFunction(y) {<br>
+              return y * y;<br>
+            }</p>
+    <h1>Funções de Auto-Invocação</h1>
+     <p>Expressões de função podem ser tornadas "auto-invocáveis".
+
+        Uma expressão auto-invocadora é invocada (iniciada) automaticamente, sem ser chamada.
+        
+        As expressões de função serão executadas automaticamente se a expressão for seguida por ().
+        
+        Você não pode autoinvocar uma declaração de função.
+        
+        Você precisa adicionar parênteses ao redor da função para indicar que é uma expressão de função:</p>
+        <p>function NewFunction(a,b) {<br>
+            return a * b<br>
+        }<br>
+        let x = NewFunction(15,5)
+
+        </p>
+
+</body>
+</html>
